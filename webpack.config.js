@@ -40,7 +40,7 @@ module.exports = {
   ],
   devServer: { // https://webpack.js.org/configuration/dev-server/
     contentBase: './dist',
-    port: 3000,
+    port: 8080,
     hot: true
   },
   module: {

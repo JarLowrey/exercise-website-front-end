@@ -8,6 +8,7 @@ import {
 } from 'react-router-dom';
 
 import EventSearchPack from './eventsSearch/pack';
+import Header from './header/header';
 
 export default class Main extends React.Component {
   static asd() {
@@ -16,6 +17,7 @@ export default class Main extends React.Component {
   render() {
     return (
       <Router>
+        <Route path="/" component={Header} />
         <Switch>
           <Route exact path="/" component={EventSearchPack} />
         </Switch>
