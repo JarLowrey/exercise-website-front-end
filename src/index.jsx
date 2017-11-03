@@ -17,10 +17,12 @@ export default class Main extends React.Component {
   render() {
     return (
       <Router>
-        <Route path="/" component={Header} />
-        <Switch>
-          <Route exact path="/" component={EventSearchPack} />
-        </Switch>
+        <div>
+          <Route path="/" component={Header} />
+          <Switch>
+            <Route exact path="/" component={EventSearchPack} />
+          </Switch>
+        </div>
       </Router>
     );
   }
